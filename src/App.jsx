@@ -1,6 +1,7 @@
 import { ArrowUpRightFromSquare } from 'lucide-react';
 import randomColor from 'randomcolor';
 import { useState } from 'react';
+import Logo from './assets/48-01.png'
 
 function App() {
   const localColorA = localStorage.getItem("ColorA");
@@ -31,8 +32,11 @@ function App() {
 
   return (
     <main className="w-80 h-auto bg-white p-4 rounded-lg shadow-md flex flex-col items-center gap-4">
-      <div className='flex justify-start w-full items-center gap-3'>
-        <h1 className="text-xl font-bold text-gray-800">Shadify</h1>
+      <div className='flex justify-between w-full items-center gap-3'>
+        <div className='flex justify-start w-full items-center gap-3'>
+          <img src={Logo} alt="Shadify" className='max-w-9' />
+          <h1 className="text-xl font-bold text-gray-800">Shadify</h1>
+        </div>
         <ArrowUpRightFromSquare
           className='text-blue-500 cursor-pointer'
           onClick={handleFollow}

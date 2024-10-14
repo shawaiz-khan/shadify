@@ -8,8 +8,8 @@
         "default_title": "Shadify - Generate Color Palettes"
     },
     "icons": {
-        "48": "./vite.svg",
-        "128": "./vite.svg"
+        "48": "./48-01.png",
+        "128": "./128-01.png"
     },
     "permissions": []
 }
